@@ -4,6 +4,17 @@ import java.util.ArrayList;
 
 public class ArrayListExample {
     public static void main(String[] args) {
+
+        /** Insertion ordered, Unsorted, allowed duplicate values */
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(2);
+        numbers.add(0);
+        numbers.add(8);
+        numbers.add(3);
+        numbers.add(2);
+        System.out.println("numbers: " + numbers);
+
+
         ArrayList<String> languages = new ArrayList<>();
 
         /** add() method without the index parameter */

@@ -1,10 +1,11 @@
-package setExample.hashSet;
+package setExample.linkedHashSet;
+
 import java.util.*;
 
-public class HashSetExample {
+public class LinkedHashSetExample {
     public static void main(String[] args) {
         /** Insertion Unordered, Sorted, Not allowed duplicate values */
-        HashSet<Integer> numbers = new HashSet<>();
+        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
         numbers.add(2);
         numbers.add(0);
         numbers.add(8);
@@ -12,14 +13,14 @@ public class HashSetExample {
         numbers.add(2);
         System.out.println("numbers: " + numbers);
 
-        HashSet<Integer> evenNumber = new HashSet<>();
+        LinkedHashSet<Integer> evenNumber = new LinkedHashSet<>();
         // Using add() method
-        evenNumber.add(6);
+        evenNumber.add(2);
         evenNumber.add(4);
-        evenNumber.add(8);
+        evenNumber.add(6);
         System.out.println("HashSet: " + evenNumber);
 
-        HashSet<Integer> oddNumbers = new HashSet<>();
+        LinkedHashSet<Integer> oddNumbers = new LinkedHashSet<>();
         /** Using addAll() method*/
         oddNumbers.addAll(evenNumber);
         oddNumbers.add(1);
@@ -42,7 +43,7 @@ public class HashSetExample {
         oddNumbers.addAll(evenNumber);
         System.out.println("Union is: " + oddNumbers);
 
-        HashSet<Integer> primeNumbers = new HashSet<>();
+        LinkedHashSet<Integer> primeNumbers = new LinkedHashSet<>();
         primeNumbers.add(2);
         primeNumbers.add(3);
         System.out.println("primeNumbers: " + primeNumbers);

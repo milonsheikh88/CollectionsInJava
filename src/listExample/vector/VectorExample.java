@@ -1,11 +1,20 @@
 package listExample.vector;
 
+import java.util.Stack;
 import java.util.Vector;
 
 public class VectorExample {
     public static void main(String[] args) {
-        Vector<String> languages = new Vector<>();
+        /** Insertion ordered, Unsorted, allowed duplicate values */
+        Vector<Integer> numbers = new Vector<>();
+        numbers.add(2);
+        numbers.add(0);
+        numbers.add(8);
+        numbers.add(3);
+        numbers.add(2);
+        System.out.println("numbers: " + numbers);
 
+        Vector<String> languages = new Vector<>();
         /** add() method without the index parameter */
         languages.add("Java");
         languages.add("C#");

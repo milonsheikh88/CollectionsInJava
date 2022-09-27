@@ -1,8 +1,19 @@
 package listExample.stack;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class StackExample {
     public static void main(String[] args) {
+        /** Insertion ordered, Unsorted, allowed duplicate values */
+        Stack<Integer> numbers = new Stack<>();
+        numbers.add(2);
+        numbers.add(0);
+        numbers.add(8);
+        numbers.add(3);
+        numbers.add(2);
+        System.out.println("numbers: " + numbers);
+
+
         Stack<String> languages = new Stack<>();
 
         /** add() method without the index parameter */

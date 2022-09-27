@@ -1,15 +1,26 @@
 package listExample.linkedList;
+import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class LinkedListExample {
     public static void main(String[] args) {
-        LinkedList<String> languages = new LinkedList<>();
 
+        /** Insertion ordered, Unsorted, allowed duplicate values */
+        LinkedList<Integer> numbers = new LinkedList<>();
+        numbers.add(2);
+        numbers.add(0);
+        numbers.add(8);
+        numbers.add(3);
+        numbers.add(2);
+        System.out.println("numbers: " + numbers);
+
+        LinkedList<String> languages = new LinkedList<>();
         /** add() method without the index parameter */
         languages.add("Java");
         languages.add("C#");
+        languages.add("Python");
         languages.add("Python");
 
         /** add() method with specific index parameter */
