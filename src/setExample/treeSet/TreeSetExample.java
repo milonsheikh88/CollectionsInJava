@@ -1,14 +1,14 @@
-package setExample.linkedHashSet;
+package setExample.treeSet;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.TreeSet;
 
-public class LinkedHashSetExample {
+public class TreeSetExample {
     public static void main(String[] args) {
         /** Insertion Unordered, Sorted, Not allowed duplicate values */
-        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
+        TreeSet<Integer> numbers = new TreeSet <>();
         numbers.add(2);
         numbers.add(0);
         numbers.add(8);
@@ -16,19 +16,19 @@ public class LinkedHashSetExample {
         numbers.add(2);
         System.out.println("numbers: " + numbers);
 
-        LinkedHashSet<Integer> evenNumber = new LinkedHashSet<>();
+        TreeSet<Integer> evenNumber = new TreeSet<>();
         // Using add() method
         evenNumber.add(2);
         evenNumber.add(4);
         evenNumber.add(6);
-        System.out.println("LinkedHashSet: " + evenNumber);
+        System.out.println("TreeSet: " + evenNumber);
 
-        LinkedHashSet<Integer> oddNumbers = new LinkedHashSet<>();
+        TreeSet<Integer> oddNumbers = new TreeSet<>();
         /** Using addAll() method*/
         oddNumbers.addAll(evenNumber);
         oddNumbers.add(1);
         oddNumbers.add(3);
-        System.out.println("New LinkedHashSet: " + oddNumbers);
+        System.out.println("New TreeSet: " + oddNumbers);
 
         // Calling iterator() method
         Iterator<Integer> iterate = oddNumbers.iterator();
@@ -46,7 +46,7 @@ public class LinkedHashSetExample {
         oddNumbers.addAll(evenNumber);
         System.out.println("Union is: " + oddNumbers);
 
-        LinkedHashSet<Integer> primeNumbers = new LinkedHashSet<>();
+        TreeSet<Integer> primeNumbers = new TreeSet<>();
         primeNumbers.add(2);
         primeNumbers.add(3);
         System.out.println("primeNumbers: " + primeNumbers);
@@ -54,6 +54,23 @@ public class LinkedHashSetExample {
         // Intersection of two sets
         evenNumber.retainAll(primeNumbers);
         System.out.println("Intersection is: " + evenNumber);
+
+        /** Methods for Navigation */
+
+        // Using the first() method
+        int first = numbers.first();
+        System.out.println("First Number: " + first);
+
+        // Using the last() method
+        int last = numbers.last();
+        System.out.println("Last Number: " + last);
+
+        // Using pollFirst()
+        System.out.println("Removed First Element: " + numbers.pollFirst());
+
+        // Using pollLast()
+        System.out.println("Removed Last Element: " + numbers.pollLast());
+        System.out.println("New TreeSet: ====>>> " + numbers);
 
     }
 }
