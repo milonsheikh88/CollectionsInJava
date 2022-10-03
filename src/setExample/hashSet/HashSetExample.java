@@ -13,7 +13,7 @@ public class HashSetExample {
         System.out.println("numbers: " + numbers);
 
         HashSet<Integer> evenNumber = new HashSet<>();
-        // Using add() method
+        /** Using add() method*/
         evenNumber.add(6);
         evenNumber.add(4);
         evenNumber.add(8);
@@ -51,5 +51,11 @@ public class HashSetExample {
         evenNumber.retainAll(primeNumbers);
         System.out.println("Intersection is: " + evenNumber);
 
+        HashSet<String> name = new HashSet<String>();
+        name.add("B");
+        name.add("D");
+        name.add("A");
+        name.add("C");
+        System.out.println("name is: " + name);
     }
 }
